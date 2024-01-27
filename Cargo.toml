@@ -1,0 +1,20 @@
+[package]
+name = "oodle-sys"
+version = "0.1.0"
+authors = ["Youn Mélois <youn@melois.dev>"]
+edition = "2021"
+readme = "README.md"
+repository = "https://github.com/sehnryr/oodle-sys"
+license = "MIT"
+keywords = ["oodle", "compression"]
+categories = ["compression", "ffi"]
+build = "build.rs"
+links = "oo2corelinux64"
+
+[dependencies]
+
+[build-dependencies.bindgen]
+optional = true
+version = "0.69"
+default-features = false
+features = ["runtime", "which-rustfmt"]
