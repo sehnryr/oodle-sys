@@ -3,6 +3,7 @@ name = "oodle-sys"
 version = "0.1.0"
 authors = ["Youn Mélois <youn@melois.dev>"]
 edition = "2021"
+description = "Low-level bindings for the oodle compression library."
 readme = "README.md"
 repository = "https://github.com/sehnryr/oodle-sys"
 license = "MIT"
