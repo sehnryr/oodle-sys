@@ -2,6 +2,11 @@
 
 Low-level auto-generated bindings for [Oodle](http://www.radgametools.com/oodle.htm).
 
+## Dependencies
+
+This library binds to `liboo2corelinux64.so` on Linux. You can retrieve it by
+following the instructions here : https://github.com/sehnryr/get-oodle-lib
+
 ## Build-time bindgen
 
 This library includes a pre-generated `bindings.rs` file. It was generated using
