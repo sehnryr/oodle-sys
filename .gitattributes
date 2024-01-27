@@ -1,0 +1,8 @@
+# Classify rust-bindgen generated files as generated code.
+src/bindings.rs linguist-generated
+
+# Reclassify header files as C, so that they are not counted as C++ code.
+*.h linguist-language=C
+
+# Hide header files from Linguist
+*.h linguist-vendored
