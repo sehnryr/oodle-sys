@@ -17,7 +17,10 @@ fn generate_bindings() {}
 
 fn main() {
     println!("cargo:rustc-link-search=native=/usr/local/lib");
+    #[cfg(target_os = "linux")]
     println!("cargo:rustc-link-lib=oo2corelinux64");
+    #[cfg(target_os = "windows")]
+    println!("cargo:rustc-link-lib=oo2core_win64");
     println!("cargo:rerun-if-changed=oodle2.h");
 
     generate_bindings();

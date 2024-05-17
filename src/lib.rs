@@ -48,7 +48,15 @@ mod tests {
     #[test]
     fn test_oodle_compression() {
         let input = include_bytes!("../test_data/decompressed");
-        let mut output = vec![0u8; input.len() + 8];
+
+        let output_size = unsafe {
+            OodleLZ_GetCompressedBufferSizeNeeded(
+                OodleLZ_Compressor_OodleLZ_Compressor_Kraken,
+                input.len() as isize,
+            )
+        } as usize;
+
+        let mut output = vec![0u8; output_size];
 
         let n = unsafe {
             OodleLZ_Compress(
