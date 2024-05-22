@@ -15,3 +15,7 @@ Cargo.lock
 
 # VS Code
 .vscode/
+
+# Libary files
+liboo2corelinux64.so
+oo2core_win64.lib
