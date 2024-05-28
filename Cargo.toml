@@ -1,6 +1,6 @@
 [package]
 name = "oodle-sys"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Youn Mélois <youn@melois.dev>"]
 edition = "2021"
 description = "Low-level bindings for the oodle compression library."
